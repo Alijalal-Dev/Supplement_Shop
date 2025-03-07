@@ -278,7 +278,7 @@ p {
 h3 button.accordion-button{
     font-family: var(--heading-font);
     background: none;
-    font-size: 1.75rem;
+    font-size: 1.60rem;
     line-height: 127%;
 }
 .accordion-button:focus {

@@ -94,10 +94,10 @@
       </svg>
 
     <header id="top" class="position-sticky top-0 start-0">
-      <nav class="navbar navbar-expand-lg fixed-top bg-black py-4">
+      <nav class="navbar navbar-expand-lg fixed-top bg-black py-4" style="height: 100px">
         <div class="container">
           <a class="navbar-brand" href="#home">
-            <img src="images/Logo.png" class="img-fluid">
+            <img src="images/supp_logo.png" class="img-fluid">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -117,12 +117,10 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-uppercase" aria-current="page" href="#features">Features</a>
-                <li class="nav-item">
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" aria-current="page" href="#products">Products</a>
-                      </li>
-                  <a class="nav-link text-uppercase" aria-current="page" href="#reviews">Reviews</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase" aria-current="page" href="#products">Products</a>
+                  </li>
                 <li class="nav-item">
                   <a class="nav-link text-uppercase" aria-current="page" href="#faqs">FAQs</a>
                 </li>
@@ -175,10 +173,10 @@
               </svg>
             </div>
             <h4 class="mt-2">
-              Free Shipping Charge
+              Cash on delivery
             </h4>
             <p>
-              Inside City delivery within 5 days
+              Inside City delivery within 1 day
             </p>
           </div>
           <div class="col-md-4">
@@ -201,8 +199,7 @@
     <section id="features" class="section-padding">
       <div class="container">
         <div class="text-center pb-5">
-          <h2>Why to use Supple</h2>
-          <p>Suspen dise tempus oncu enim pellen teste pretium.</p>
+          <h2>Benefits of Our Supplements</h2>
         </div>
         <div class="row">
           <div class="col-md-4 mt-3">
@@ -213,8 +210,8 @@
                 </svg>
               </div>
              <div class="text-md-end">
-                <h4>Feature One</h4>
-                <p>Lorem ipsum dolor sit amet consectetur. Molestie aenean enim massa magna.</p>
+                <h4>Enhance the Resistance</h4>
+                <p>Stay resilient against stress, fatigue, and sickness.</p>
              </div>
             </div>
             <div class="d-flex gap-4 flex-md-row-reverse mb-5 me-2">
@@ -224,8 +221,8 @@
                 </svg>
               </div>
               <div class="text-md-end">
-                <h4>Feature Two</h4>
-                <p>Lorem ipsum dolor sit amet consectetur. Molestie aenean enim massa magna.</p>
+                <h4>Enhances Energy Levels</h4>
+                <p> Fights fatigue and improves daily performance.</p>
               </div>
             </div>
             <div class="d-flex gap-4 flex-md-row-reverse mb-5 me-2">
@@ -235,13 +232,13 @@
                 </svg>
               </div>
               <div class="text-md-end">
-                <h4>Feature Three</h4>
-                <p>Lorem ipsum dolor sit amet consectetur. Molestie aenean enim massa magna.</p>
+                <h4>Bone Health</h4>
+                <p>Strengthen your bones with key vitamins like calcium and vitamin D for long-term support and mobility.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <img src="images/feature-img.jpg" class="img-fluid rounded-4">
+            <img src="images/feature_img.png" class="img-fluid rounded-4" style="margin-top:50px;margin-left:30px">
           </div>
           <div class="col-md-4 mt-3">
             <div class="d-flex gap-4 mb-5 ms-2">
@@ -251,8 +248,8 @@
                 </svg>
               </div>
               <div class="text-start">
-                <h4>Feature Four</h4>
-                <p>Lorem ipsum dolor sit amet consectetur. Molestie aenean enim massa magna.</p>
+                <h4>Easy to Consume</h4>
+                <p>Available in pills, powders, or gummies for convenience.</p>
               </div>
             </div>
             <div class="col">
@@ -263,8 +260,8 @@
                   </svg>
                 </div>
                 <div class="text-start">
-                  <h4>Feature Five</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur. Molestie aenean enim massa magna.</p>
+                  <h4>Great Taste</h4>
+                  <p>Enjoy the benefits of supplements without the chalky aftertaste delicious flavors make health a treat.</p>
                 </div>
               </div>
             </div>
@@ -276,8 +273,8 @@
                   </svg>
                 </div>
                 <div class="text-start">
-                  <h4>Feature Six</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur. Molestie aenean enim massa magna.</p>
+                  <h4>Energy Booster</h4>
+                  <p>Boost your energy during training to get the most out of your weightlifting sessions.</p>
                 </div>
               </div>
             </div>
@@ -471,270 +468,87 @@
         </div>
       </section>
 
-    <section id="reviews" class="bg-black">
-      <div class="container">
-       <div class="text-center pb-5">
-         <h2>Customer's Reviews</h2>
-       </div>
-       <div class="swiper testimonial-swiper">
-        <div class="swiper-wrapper">
-          <div class="testimonial-card text-center py-3 px-2 swiper-slide">
-            <h3>Kevin H.</h3>
-            <span>8/20/2023</span>
-            <blockquote class="mt-3">“Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”</blockquote>
-            <div class="review-icon">
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-            </div>
+      <section id="faqs" class="bg-secondary section-padding section-margin">
+        <div class="container">
+          <div class="text-center pb-5">
+            <h2>FAQs</h2>
+            <p>Frequently asked questions.</p>
           </div>
-          <div class="testimonial-card text-center py-3 px-2 swiper-slide">
-            <h3>Kevin H.</h3>
-            <span>8/20/2023</span>
-            <blockquote class="mt-3">“Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”</blockquote>
-            <div class="review-icon">
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="testimonial-card text-center py-3 px-2 swiper-slide">
-            <h3>Kevin H.</h3>
-            <span>8/20/2023</span>
-            <blockquote class="mt-3">“Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”</blockquote>
-            <div class="review-icon">
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="testimonial-card text-center py-3 px-2 swiper-slide">
-            <h3>Kevin H.</h3>
-            <span>8/20/2023</span>
-            <blockquote class="mt-3">“Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”</blockquote>
-            <div class="review-icon">
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="testimonial-card text-center py-3 px-2 swiper-slide">
-            <h3>Kevin H.</h3>
-            <span>8/20/2023</span>
-            <blockquote class="mt-3">“Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”</blockquote>
-            <div class="review-icon">
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="testimonial-card text-center py-3 px-2 swiper-slide">
-            <h3>Kevin H.</h3>
-            <span>8/20/2023</span>
-            <blockquote class="mt-3">“Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”</blockquote>
-            <div class="review-icon">
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="testimonial-card text-center py-3 px-2 swiper-slide">
-            <h3>Kevin H.</h3>
-            <span>8/20/2023</span>
-            <blockquote class="mt-3">“Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”</blockquote>
-            <div class="review-icon">
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="testimonial-card text-center py-3 px-2 swiper-slide">
-            <h3>Kevin H.</h3>
-            <span>8/20/2023</span>
-            <blockquote class="mt-3">“Malesuada et ut vitae eget. Leo viverra fringilla faucibus proin lacinia ornare amet. Aliquam mi eros dapibus pulvinar.”</blockquote>
-            <div class="review-icon">
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-swiper-pagination position-relative mt-5 text-center"></div>
-      </div>
-    </section>
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="accordion" id="accordionExample">
 
-    <section id="faqs" class="bg-secondary section-padding section-margin">
-      <div class="container">
-        <div class="text-center pb-5">
-          <h2>FAQs</h2>
-          <p>Frequently asked questions.</p>
-        </div>
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <div class="accordion">
-              <div class="accordion-item rounded-0 mb-3">
-                <h3 class="accordion-header">
-                  <button class="accordion-button text-capitalize fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    How this supplement works?
-                  </button>
-                </h3>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample" >
-                  <div class="accordion-body">
-                    <p>Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas quis velit maecenas magnis. Etiam faucibus et ultrices sit aliquet ultrices.</p>
+                <div class="accordion-item rounded-0 mb-3">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button text-capitalize fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      What types of supplements do you offer?
+                    </button>
+                  </h3>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>We offer a wide range of supplements, including vitamins, minerals, protein powders, pre-workouts, and wellness supplements for immunity, energy, and overall health.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item rounded-0 mb-3">
-                <h3 class="accordion-header">
-                  <button class="accordion-button text-capitalize fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Is there refund policy?
-                  </button>
-                </h3>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas quis velit maecenas magnis. Etiam faucibus et ultrices sit aliquet ultrices.</p>
+
+                <div class="accordion-item rounded-0 mb-3">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button text-capitalize fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Are your supplements safe to use?
+                    </button>
+                  </h3>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Yes! Our supplements are made with high-quality ingredients and follow strict safety standards. However, we recommend consulting a healthcare professional before use.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item rounded-0 mb-3">
-                <h3 class="accordion-header">
-                  <button class="accordion-button text-capitalize fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    How can i trust your supplements?
-                  </button>
-                </h3>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas quis velit maecenas magnis. Etiam faucibus et ultrices sit aliquet ultrices.</p>
+
+                <div class="accordion-item rounded-0 mb-3">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button text-capitalize fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How long does shipping take?
+                    </button>
+                  </h3>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Shipping times vary based on location. Typically, orders are delivered within 1 day if it's the same city; otherwise, it may take 2 to 3 days.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item rounded-0 mb-3">
-                <h3 class="accordion-header">
-                  <button class="accordion-button text-capitalize fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Is there any side effects of this supplement?
-                  </button>
-                </h3>
-                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas quis velit maecenas magnis. Etiam faucibus et ultrices sit aliquet ultrices.</p>
+
+                <div class="accordion-item rounded-0 mb-3">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button text-capitalize fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      How should I store my supplements?
+                    </button>
+                  </h3>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Keep supplements in a cool, dry place, away from direct sunlight. Some products may require refrigeration—check the packaging for details.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="accordion-item rounded-0 mb-3">
-                <h3 class="accordion-header">
-                  <button class="accordion-button text-capitalize fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                    Is this helpful to gain muscles?
-                  </button>
-                </h3>
-                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <p>Et nec ipsum tincidunt ut felis elementum proin eget dignissim egestas quis velit maecenas magnis. Etiam faucibus et ultrices sit aliquet ultrices.</p>
+
+                <div class="accordion-item rounded-0 mb-3">
+                  <h3 class="accordion-header">
+                    <button class="accordion-button text-capitalize fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Do you offer free shipping?
+                    </button>
+                  </h3>
+                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Yes! We offer free shipping on orders over 800 DHS. Check our shipping policy for details.</p>
+                    </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
-        </div>
-      </div>
-    </section>
+      </section>
+
 
 
     <footer id="footer" class="section-padding pt-0">
