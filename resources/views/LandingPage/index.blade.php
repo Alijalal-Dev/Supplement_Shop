@@ -118,10 +118,10 @@
                 <li class="nav-item">
                   <a class="nav-link text-uppercase" aria-current="page" href="#features">Features</a>
                 <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" aria-current="page" href="#products">Products</a>
+                      </li>
                   <a class="nav-link text-uppercase" aria-current="page" href="#reviews">Reviews</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" aria-current="page" href="#products">Products</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link text-uppercase" aria-current="page" href="#faqs">FAQs</a>
@@ -136,18 +136,17 @@
       </nav>
     </header>
 
-    <section id="home" class="section-padding pt-5">
+    <section id="home" class="section-padding">
       <div class="container">
         <div class="row g-3 flex-row-reverse align-items-center">
           <div class="col-md-6">
-            <img src="images/billboard-img.jpg" class="img-fluid rounded-4" alt="banner">
+            <img src="images/supple1.jpg" class="img-fluid rounded-4" style="height: 600px;margin-left: 100px" alt="banner">
           </div>
           <div class="col-md-6 text-center">
-            <h1 class="display-1 fw-bold">
-              Pre Workout Supplements.
-            </h1>
-            <p>Write here about your product short description.</p>
-            <a href="#" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">Purchase</a>
+            <h3 class="">
+                No matter where you are, your supplements come to you!
+            </h3>
+            <a href="#features" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">Discover us</a>
           </div>
         </div>
       </div>
@@ -286,6 +285,191 @@
         </div>
       </div>
     </section>
+
+    <section id="products" class="bg-black py-5">
+        <div class="container">
+          <div class="text-center pb-5">
+            <h2>Order Our Product</h2>
+            <p>This is the only way to get this product in discount.</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="d-flex gap-3 product-preview">
+                <div class="swiper thumb-swiper w-50">
+                  <div class="swiper-wrapper d-flex flex-wrap gap-3 align-content-start">
+                    <div class="swiper-slide">
+                      <img src="images/product-thumbnail-1.jpg" alt="product-thumb" class="img-fluid rounded-2">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/product-thumbnail-2.jpg" alt="product-thumb" class="img-fluid rounded-2">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/product-thumbnail-3.jpg" alt="product-thumb" class="img-fluid rounded-2">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper large-swiper rounded-3 overflow-hidden">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="images/product-large-1.jpg" alt="single-product" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/product-large-2.jpg" alt="single-product" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="images/product-large-3.jpg" alt="single-product" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="review-icon">
+                <svg class="star text-warning" width="20" height="20">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="star text-warning" width="20" height="20">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="star text-warning" width="20" height="20">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="star text-warning" width="20" height="20">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg class="star text-warning" width="20" height="20">
+                  <use xlink:href="#star"></use>
+                </svg>
+              </div>
+              <h3 class="fw-bold my-3">Supplement name</h3>
+              <span class="fs-3 fw-bold text-primary">$99.99 <strike class="text-white fs-5 fw-light">$190</strike></span>
+              <p class="mt-3">Tempus uspen dise oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis empus oncu enim pellen.</p>
+              <a href="#" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill my-4">Purchase</a>
+              <hr class="my-5">
+              <div class="tab-section row align-items-start">
+                <ul class="nav mb-3" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Reviews (2)</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                    <p>Dise tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis empus oncu enim pellen. Pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis empus .</p>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="review-box review-style d-flex gap-3 flex-column">
+                      <div class="review-item d-flex">
+                        <div class="image-holder me-2">
+                          <img src="images/review-image1.jpg" alt="review" class="img-fluid rounded-3">
+                        </div>
+                        <div class="review-content">
+                          <div class="review-icon">
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                          </div>
+                          <div class="review-header">
+                            <span class="author-name fw-medium">Tom Johnson</span>
+                            <span class="review-date">- 07/05/2022</span>
+                          </div>
+                          <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis</p>
+                        </div>
+                      </div>
+                      <div class="review-item d-flex">
+                        <div class="image-holder me-2">
+                          <img src="images/review-image2.jpg" alt="review" class="img-fluid rounded-3">
+                        </div>
+                        <div class="review-content">
+                          <div class="review-icon">
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                            <svg class="star text-warning" width="20" height="20">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                          </div>
+                          <div class="review-header">
+                            <span class="author-name fw-medium">Jenny Willis</span>
+                            <span class="review-date">- 07/05/2022</span>
+                          </div>
+                          <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="add-review margin-small">
+                      <h3>Add a review</h3>
+                      <p>Your email address will not be published. Required fields are marked *</p>
+                      <div class="review-rating py-2">
+                        <span class="my-2">Your rating *</span>
+                        <div class="review-icon">
+                          <svg class="star text-secondary" width="20" height="20">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                          <svg class="star text-secondary" width="20" height="20">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                          <svg class="star text-secondary" width="20" height="20">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                          <svg class="star text-secondary" width="20" height="20">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                          <svg class="star text-secondary" width="20" height="20">
+                            <use xlink:href="#star"></use>
+                          </svg>
+                        </div>
+                      </div>
+                      <input type="file" class="jfilestyle py-3 border-0" data-text="Choose your file">
+                      <form id="form" class="d-flex gap-3 flex-wrap">
+                        <div class="w-100 d-flex gap-3">
+                          <div class="w-50">
+                            <input type="text" name="name" placeholder="Write your name here *" class="form-control w-100">
+                          </div>
+                          <div class="w-50">
+                            <input type="text" name="email" placeholder="Write your email here *" class="form-control w-100">
+                          </div>
+                        </div>
+                        <div class="w-100">
+                          <textarea placeholder="Write your review here *" class="form-control w-100"></textarea>
+                        </div>
+                        <label class="w-100">
+                          <input type="checkbox" required="" class="d-inline">
+                          <span>Save my name, email, and website in this browser for the next time.</span>
+                        </label>
+                        <a href="#" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">Submit</a>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <section id="reviews" class="bg-black">
       <div class="container">
@@ -473,191 +657,6 @@
         </div>
       </div>
       <div class="testimonial-swiper-pagination position-relative mt-5 text-center"></div>
-      </div>
-    </section>
-
-    <section id="products" class="bg-black py-5">
-      <div class="container">
-        <div class="text-center pb-5">
-          <h2>Order Our Product</h2>
-          <p>This is the only way to get this product in discount.</p>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="d-flex gap-3 product-preview">
-              <div class="swiper thumb-swiper w-50">
-                <div class="swiper-wrapper d-flex flex-wrap gap-3 align-content-start">
-                  <div class="swiper-slide">
-                    <img src="images/product-thumbnail-1.jpg" alt="product-thumb" class="img-fluid rounded-2">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/product-thumbnail-2.jpg" alt="product-thumb" class="img-fluid rounded-2">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/product-thumbnail-3.jpg" alt="product-thumb" class="img-fluid rounded-2">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper large-swiper rounded-3 overflow-hidden">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="images/product-large-1.jpg" alt="single-product" class="img-fluid">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/product-large-2.jpg" alt="single-product" class="img-fluid">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/product-large-3.jpg" alt="single-product" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="review-icon">
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-              <svg class="star text-warning" width="20" height="20">
-                <use xlink:href="#star"></use>
-              </svg>
-            </div>
-            <h3 class="fw-bold my-3">Supplement name</h3>
-            <span class="fs-3 fw-bold text-primary">$99.99 <strike class="text-white fs-5 fw-light">$190</strike></span>
-            <p class="mt-3">Tempus uspen dise oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis empus oncu enim pellen.</p>
-            <a href="#" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill my-4">Purchase</a>
-            <hr class="my-5">
-            <div class="tab-section row align-items-start">
-              <ul class="nav mb-3" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Reviews (2)</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                  <p>Dise tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis empus oncu enim pellen. Pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis empus .</p>
-                </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                  <div class="review-box review-style d-flex gap-3 flex-column">
-                    <div class="review-item d-flex">
-                      <div class="image-holder me-2">
-                        <img src="images/review-image1.jpg" alt="review" class="img-fluid rounded-3">
-                      </div>
-                      <div class="review-content">
-                        <div class="review-icon">
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                        </div>
-                        <div class="review-header">
-                          <span class="author-name fw-medium">Tom Johnson</span>
-                          <span class="review-date">- 07/05/2022</span>
-                        </div>
-                        <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis</p>
-                      </div>
-                    </div>
-                    <div class="review-item d-flex">
-                      <div class="image-holder me-2">
-                        <img src="images/review-image2.jpg" alt="review" class="img-fluid rounded-3">
-                      </div>
-                      <div class="review-content">
-                        <div class="review-icon">
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-warning" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                        </div>
-                        <div class="review-header">
-                          <span class="author-name fw-medium">Jenny Willis</span>
-                          <span class="review-date">- 07/05/2022</span>
-                        </div>
-                        <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="add-review margin-small">
-                    <h3>Add a review</h3>
-                    <p>Your email address will not be published. Required fields are marked *</p>
-                    <div class="review-rating py-2">
-                      <span class="my-2">Your rating *</span>
-                      <div class="review-icon">
-                        <svg class="star text-secondary" width="20" height="20">
-                          <use xlink:href="#star"></use>
-                        </svg>
-                        <svg class="star text-secondary" width="20" height="20">
-                          <use xlink:href="#star"></use>
-                        </svg>
-                        <svg class="star text-secondary" width="20" height="20">
-                          <use xlink:href="#star"></use>
-                        </svg>
-                        <svg class="star text-secondary" width="20" height="20">
-                          <use xlink:href="#star"></use>
-                        </svg>
-                        <svg class="star text-secondary" width="20" height="20">
-                          <use xlink:href="#star"></use>
-                        </svg>
-                      </div>
-                    </div>
-                    <input type="file" class="jfilestyle py-3 border-0" data-text="Choose your file">
-                    <form id="form" class="d-flex gap-3 flex-wrap">
-                      <div class="w-100 d-flex gap-3">
-                        <div class="w-50">
-                          <input type="text" name="name" placeholder="Write your name here *" class="form-control w-100">
-                        </div>
-                        <div class="w-50">
-                          <input type="text" name="email" placeholder="Write your email here *" class="form-control w-100">
-                        </div>
-                      </div>
-                      <div class="w-100">
-                        <textarea placeholder="Write your review here *" class="form-control w-100"></textarea>
-                      </div>
-                      <label class="w-100">
-                        <input type="checkbox" required="" class="d-inline">
-                        <span>Save my name, email, and website in this browser for the next time.</span>
-                      </label>
-                      <a href="#" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">Submit</a>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 

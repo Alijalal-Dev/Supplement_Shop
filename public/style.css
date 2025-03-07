@@ -10,7 +10,7 @@ Version: 1.1
 /*--------------------------------------------------------------
 This is main CSS file that contains custom style rules used in this template
 --------------------------------------------------------------*/
-    
+
 /*--------------------------------------------------------------
 /** VARIABLES
 --------------------------------------------------------------*/
@@ -44,17 +44,17 @@ This is main CSS file that contains custom style rules used in this template
     --bs-link-hover-color: #F6F6F6;
     --bs-link-hover-color-rgb: 246, 246, 246;
     --bs-primary-text-emphasis: #F6F6F6;
-  
+
     --bs-btn-font-size: 1rem;
     --bs-nav-link-font-size: 16px;
   }
-  
+
   /* Fonts */
   :root {
     --body-font  : "Montserrat", sans-serif;
     --heading-font  : "syne", sans-serif;
   }
-  
+
   @media (min-width: 1850px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
       max-width: 1540px;
@@ -71,7 +71,7 @@ body, body [data-bs-theme="light"] {
     --bs-yellow: #ffc107;
     --bs-green: #198754;
     --bs-teal: #20c997;
-    --bs-cyan: #0dcaf0;  
+    --bs-cyan: #0dcaf0;
     --bs-black: #000;
     --bs-white: #fff;
     --bs-gray: #6c757d;
@@ -121,7 +121,7 @@ hr{
     opacity: 1;
 }
 
-body { 
+body {
     font-family: var(--body-font);
     font-size: 20px;
     font-weight: 300;
@@ -133,7 +133,7 @@ h2,
 h3,
 h4,
 h5,
-h6 { 
+h6 {
     font-family: var(--heading-font);
     color: var(--bs-heading-color);
 }
@@ -147,7 +147,7 @@ h2 {
     font-weight: bold;
 }
 h3 {
-    font-size: 38px;
+    font-size: 55px;
     font-weight: 400;
 }
 h4 {
@@ -164,7 +164,7 @@ h5 {
       font-size: 40px;
     }
 }
-  
+
 @media only screen and (max-width: 600px) {
     h2{
         font-size: 39px;
@@ -199,7 +199,6 @@ p {
 }
 
 .section-padding{
-    padding-top: 150px;
     padding-bottom: 150px;
 }
 
