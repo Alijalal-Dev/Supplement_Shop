@@ -286,184 +286,138 @@
     <section id="products" class="bg-black py-5">
         <div class="container">
           <div class="text-center pb-5">
-            <h2>Order Our Product</h2>
-            <p>This is the only way to get this product in discount.</p>
+            <h2 class="text-white">Featured Supplements</h2>
+            <p class="text-white opacity-75">Exclusive discounts on our premium collection</p>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="d-flex gap-3 product-preview">
-                <div class="swiper thumb-swiper w-50">
-                  <div class="swiper-wrapper d-flex flex-wrap gap-3 align-content-start">
-                    <div class="swiper-slide">
-                      <img src="images/product-thumbnail-1.jpg" alt="product-thumb" class="img-fluid rounded-2">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/product-thumbnail-2.jpg" alt="product-thumb" class="img-fluid rounded-2">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/product-thumbnail-3.jpg" alt="product-thumb" class="img-fluid rounded-2">
-                    </div>
+
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <!-- Product Card 1 -->
+            <div class="col">
+              <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/product-large-1.jpg" alt="Supplement 1" class="card-img-top">
+                  <div class="position-absolute top-0 end-0 m-2">
+                    <span class="badge bg-primary text-dark fw-bold px-2 py-1 rounded-pill">-47%</span>
                   </div>
                 </div>
-                <div class="swiper large-swiper rounded-3 overflow-hidden">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="images/product-large-1.jpg" alt="single-product" class="img-fluid">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/product-large-2.jpg" alt="single-product" class="img-fluid">
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="images/product-large-3.jpg" alt="single-product" class="img-fluid">
-                    </div>
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex mb-2">
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <span class="ms-1 text-white-50 small">(124)</span>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="review-icon">
-                <svg class="star text-warning" width="20" height="20">
-                  <use xlink:href="#star"></use>
-                </svg>
-                <svg class="star text-warning" width="20" height="20">
-                  <use xlink:href="#star"></use>
-                </svg>
-                <svg class="star text-warning" width="20" height="20">
-                  <use xlink:href="#star"></use>
-                </svg>
-                <svg class="star text-warning" width="20" height="20">
-                  <use xlink:href="#star"></use>
-                </svg>
-                <svg class="star text-warning" width="20" height="20">
-                  <use xlink:href="#star"></use>
-                </svg>
-              </div>
-              <h3 class="fw-bold my-3">Supplement name</h3>
-              <span class="fs-3 fw-bold text-primary">$99.99 <strike class="text-white fs-5 fw-light">$190</strike></span>
-              <p class="mt-3">Tempus uspen dise oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis empus oncu enim pellen.</p>
-              <a href="#" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill my-4">Purchase</a>
-              <hr class="my-5">
-              <div class="tab-section row align-items-start">
-                <ul class="nav mb-3" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Reviews (2)</button>
-                  </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                    <p>Dise tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis empus oncu enim pellen. Pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis empus .</p>
-                  </div>
-                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                    <div class="review-box review-style d-flex gap-3 flex-column">
-                      <div class="review-item d-flex">
-                        <div class="image-holder me-2">
-                          <img src="images/review-image1.jpg" alt="review" class="img-fluid rounded-3">
-                        </div>
-                        <div class="review-content">
-                          <div class="review-icon">
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                          </div>
-                          <div class="review-header">
-                            <span class="author-name fw-medium">Tom Johnson</span>
-                            <span class="review-date">- 07/05/2022</span>
-                          </div>
-                          <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis</p>
-                        </div>
-                      </div>
-                      <div class="review-item d-flex">
-                        <div class="image-holder me-2">
-                          <img src="images/review-image2.jpg" alt="review" class="img-fluid rounded-3">
-                        </div>
-                        <div class="review-content">
-                          <div class="review-icon">
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                            <svg class="star text-warning" width="20" height="20">
-                              <use xlink:href="#star"></use>
-                            </svg>
-                          </div>
-                          <div class="review-header">
-                            <span class="author-name fw-medium">Jenny Willis</span>
-                            <span class="review-date">- 07/05/2022</span>
-                          </div>
-                          <p>Vitae tortor condimentum lacinia quis vel eros donec ac. Nam at lectus urna duis convallis convallis</p>
-                        </div>
-                      </div>
+                  <h5 class="card-title text-white fw-bold">Premium Whey Protein</h5>
+                  <p class="card-text text-white-50 small">High-quality protein supplement for muscle recovery and growth.</p>
+                  <div class="mt-auto">
+                    <div class="d-flex align-items-center mb-3">
+                      <span class="fs-5 fw-bold text-primary me-2">$99.99</span>
+                      <span class="text-white-50 text-decoration-line-through">$190.00</span>
                     </div>
-                    <div class="add-review margin-small">
-                      <h3>Add a review</h3>
-                      <p>Your email address will not be published. Required fields are marked *</p>
-                      <div class="review-rating py-2">
-                        <span class="my-2">Your rating *</span>
-                        <div class="review-icon">
-                          <svg class="star text-secondary" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-secondary" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-secondary" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-secondary" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                          <svg class="star text-secondary" width="20" height="20">
-                            <use xlink:href="#star"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <input type="file" class="jfilestyle py-3 border-0" data-text="Choose your file">
-                      <form id="form" class="d-flex gap-3 flex-wrap">
-                        <div class="w-100 d-flex gap-3">
-                          <div class="w-50">
-                            <input type="text" name="name" placeholder="Write your name here *" class="form-control w-100">
-                          </div>
-                          <div class="w-50">
-                            <input type="text" name="email" placeholder="Write your email here *" class="form-control w-100">
-                          </div>
-                        </div>
-                        <div class="w-100">
-                          <textarea placeholder="Write your review here *" class="form-control w-100"></textarea>
-                        </div>
-                        <label class="w-100">
-                          <input type="checkbox" required="" class="d-inline">
-                          <span>Save my name, email, and website in this browser for the next time.</span>
-                        </label>
-                        <a href="#" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">Submit</a>
-                      </form>
-                    </div>
+                    <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2">Add to Cart</button>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- Product Card 2 -->
+            <div class="col">
+              <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/product-large-2.jpg" alt="Supplement 2" class="card-img-top">
+                  <div class="position-absolute top-0 end-0 m-2">
+                    <span class="badge bg-primary text-dark fw-bold px-2 py-1 rounded-pill">-38%</span>
+                  </div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex mb-2">
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <span class="ms-1 text-white-50 small">(89)</span>
+                  </div>
+                  <h5 class="card-title text-white fw-bold">Pre-Workout Energy</h5>
+                  <p class="card-text text-white-50 small">Advanced formula for enhanced performance and energy during workouts.</p>
+                  <div class="mt-auto">
+                    <div class="d-flex align-items-center mb-3">
+                      <span class="fs-5 fw-bold text-primary me-2">$79.99</span>
+                      <span class="text-white-50 text-decoration-line-through">$129.99</span>
+                    </div>
+                    <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="col">
+              <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/product-large-3.jpg" alt="Supplement 3" class="card-img-top">
+                  <div class="position-absolute top-0 end-0 m-2">
+                    <span class="badge bg-primary text-dark fw-bold px-2 py-1 rounded-pill">NEW</span>
+                  </div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex mb-2">
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <span class="ms-1 text-white-50 small">(56)</span>
+                  </div>
+                  <h5 class="card-title text-white fw-bold">BCAA Complex</h5>
+                  <p class="card-text text-white-50 small">Essential amino acids to support muscle growth and reduce recovery time.</p>
+                  <div class="mt-auto">
+                    <div class="d-flex align-items-center mb-3">
+                      <span class="fs-5 fw-bold text-primary me-2">$69.99</span>
+                      <span class="text-white-50 text-decoration-line-through">$99.99</span>
+                    </div>
+                    <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="col">
+              <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
+                <div class="position-relative">
+                  <img src="images/product-thumbnail-1.jpg" alt="Supplement 4" class="card-img-top">
+                  <div class="position-absolute top-0 end-0 m-2">
+                    <span class="badge bg-primary text-dark fw-bold px-2 py-1 rounded-pill">-25%</span>
+                  </div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex mb-2">
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <svg class="star text-warning" width="16" height="16"><use xlink:href="#star"></use></svg>
+                    <span class="ms-1 text-white-50 small">(72)</span>
+                  </div>
+                  <h5 class="card-title text-white fw-bold">Vitamin Complex</h5>
+                  <p class="card-text text-white-50 small">Complete multivitamin formula to support overall health and immunity.</p>
+                  <div class="mt-auto">
+                    <div class="d-flex align-items-center mb-3">
+                      <span class="fs-5 fw-bold text-primary me-2">$49.99</span>
+                      <span class="text-white-50 text-decoration-line-through">$69.99</span>
+                    </div>
+                    <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a href="#" class="btn btn-outline-primary text-white border-2 px-4 py-2 rounded-pill fw-semibold">View All Products</a>
           </div>
         </div>
       </section>
@@ -551,12 +505,11 @@
 
 
 
-    <footer id="footer" class="section-padding pt-0">
+    <footer class="section-padding pt-0" id="contact">
       <div class="container">
         <div class="row g-4">
           <div class="col-md-3">
-            <div class="logo mb-4"><img src="images/Logo.png" alt="logo" class="img-fluid"></div>
-            <p>Suspen dise tempus oncu enim pellen teste pretium.</p>
+            <div class="logo mb-4"><img src="images/logo_supp.png" alt="logo" class="img-fluid"></div>
             <div class="social-links mt-3">
               <ul class="d-flex gap-3 list-unstyled">
                 <li>
@@ -600,23 +553,22 @@
           <div class="col-md-3 ps-md-5">
             <div class="d-flex flex-column text-left">
                 <h4 class="mb-4">Links</h4>
-                <a href="#" class="nav-link mb-2 text-uppercase">About</a>
-                <a href="#" class="nav-link mb-2 text-uppercase">Privacy</a>
-                <a href="#" class="nav-link mb-2 text-uppercase">Return</a>
-                <a href="#" class="nav-link mb-2 text-uppercase">Terms</a>
+                <a href="#about" class="nav-link mb-2 text-uppercase">About</a>
+                <a href="#features" class="nav-link mb-2 text-uppercase">Features</a>
+                <a href="#products" class="nav-link mb-2 text-uppercase">Products</a>
+                <a href="#faqs" class="nav-link mb-2 text-uppercase">FAQS</a>
             </div>
           </div>
           <div class="col-md-3">
             <div class="d-flex flex-column text-left">
                 <h4 class="mb-4">Contact</h4>
-                <a href="#" class="nav-link mb-2 text-capitalize">123 456 7891</a>
-                <a href="#" class="nav-link mb-2 text-capitalize">youremail@gmail.com</a>
-                <a href="#" class="nav-link mb-2 text-capitalize">Phoenix, Arizona
-                947 Dogwood Road</a>
+                <a href="#" class="nav-link mb-2 text-capitalize">+212 458 5195</a>
+                <a href="#" class="nav-link mb-2 text-capitalize">SupplementSage@gmail.com</a>
+                <a href="#" class="nav-link mb-2 text-capitalize">Ain Chok,Casablanca</a>
             </div>
           </div>
           <div class="col-md-3">
-            <h4 class="mb-4">Send Your Message</h4>
+            <h4 class="mb-4">Ask your Question</h4>
             <form id="form" class="d-flex gap-3 flex-wrap">
               <div class="w-100 d-flex gap-3">
                 <div class="w-50">
@@ -627,7 +579,7 @@
                 </div>
               </div>
               <div class="w-100">
-                <textarea placeholder="Message*" class="form-control w-100"></textarea>
+                <input type="text" placeholder="Question*" class="form-control w-100">
               </div>
               <a href="#" class="btn btn-primary text-uppercase px-5 py-3 text-dark fw-semibold rounded-pill mt-4">Send</a>
             </form>
