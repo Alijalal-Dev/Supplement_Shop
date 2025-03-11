@@ -268,7 +268,7 @@
                       <div class="row">
                         <div class="col-5">
                           <div class="icon-big text-center">
-                            <i class="fas fa-prescription-bottle"></i> 
+                            <i class="fas fa-prescription-bottle"></i>
                           </div>
                         </div>
                         <div class="col-7 col-stats">
@@ -434,9 +434,6 @@
 
     <!-- Datatables -->
     <script src="assets/js/plugin/datatables/datatables.min.js"></script>
-
-    <!-- Bootstrap Notify -->
-    <script src="assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
     <!-- jQuery Vector Maps -->
     <script src="assets/js/plugin/jsvectormap/jsvectormap.min.js"></script>
