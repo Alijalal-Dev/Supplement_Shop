@@ -18,7 +18,7 @@ return new class extends Migration
             $table->decimal('price', 8, 2);
             $table->string('image')->nullable();
             $table->enum('type', ['accesoire', 'supplement']);
-            $table->enum('category', ['creatine', 'proteine', 'vitamine']);
+            $table->enum('category', ['creatine', 'proteine', 'vitamine','accesoire']);
             $table->timestamps();
         });
     }
