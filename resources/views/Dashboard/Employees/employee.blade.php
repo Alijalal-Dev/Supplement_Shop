@@ -3,8 +3,24 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Supplement Sage</title>
+    <title>Garden Glow</title>
     <link rel="icon" type="image/png" href="images/logo_onglet.png">
+    <style>
+        .btn-hover-shadow {
+            transition: all 0.3s ease;
+        }
+        .btn-hover-shadow:hover {
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+        }
+        .btn-primary {
+            background-color: #0d6efd; /* Bootstrap primary color */
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0b5ed7; /* Darker shade on hover */
+        }
+    </style>
 
     <!-- Fonts and icons -->
     <script src="assets/js/plugin/webfont/webfont.min.js"></script>
@@ -225,73 +241,80 @@
                 <div class="page-inner">
                     <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
                         <div>
-                            <h4 class="card-title">Products</h4>
+                            <button class="btn btn-primary btn-lg shadow-lg px-4 py-2 rounded-pill fw-bold text-uppercase animateanimated animatepulse"
+                                data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
+                                Add Employee
+                            </button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-
-                                    <button class="btn btn-primary btn-lg shadow-lg px-4 py-2 rounded-pill fw-bold text-uppercase animateanimated animatepulse"
-                                data-bs-toggle="modal" data-bs-target="#addProductModal">
-                                Add Product
-                            </button>
+                                    <h4 class="card-title">Employees</h4>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table
                                             id="multi-filter-select"
-                                            class="display table table-striped table-hover">
+                                            class="display table  table-hover">
                                             <thead>
                                                 <tr>
                                                     <th>Name</th>
-                                                    <th>Description</th>
-                                                    <th>Price</th>
-                                                    <th>Type</th>
-                                                    <th>Category</th>
-                                                    <th>Image</th>
+                                                    <th>CIN</th>
+                                                    <th>Gender</th>
+                                                    <th>Adresse</th>
+                                                    <th>Date Debut</th>
+                                                    <th>Date Fin</th>
+                                                    <th>Post</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tfoot>
                                                 <tr>
                                                     <th>Name</th>
-                                                    <th>Description</th>
-                                                    <th>Price</th>
-                                                    <th>Type</th>
-                                                    <th>Category</th>
+                                                    <th>CIN</th>
+                                                    <th>Gender</th>
+                                                    <th>Adresse</th>
+                                                    <th>Date Debut</th>
+                                                    <th>Date Fin</th>
+                                                    <th>Post</th>
                                                 </tr>
                                             </tfoot>
 
                                             <tbody>
-                                                @foreach ($products as $product)
+                                                @foreach ($employees as $employee)
                                                 <tr>
-                                                    <td>{{ $product->name }}</td>
-                                                    <td>{{ $product->description }}</td>
-                                                    <td>{{ number_format($product->price, 2) }} DH</td>
-                                                    <td>{{ $product->type }}</td>
-                                                    <td>{{ $product->category }}</td>
-                                                    <td><img src="{{ $product->image }}" style="height:50px; width:50px" alt=""></td>
-
+                                                    <td>{{ $employee->name }}</td>
+                                                    <td>{{ $employee->cin }}</td>
+                                                    <td>{{ $employee->gender }}</td>
+                                                    <td>{{ $employee->adresse }}</td>
+                                                    <td>{{ $employee->date_debut }}</td>
+                                                    <td>{{ $employee->date_fin }}</td>
+                                                    <td>{{ $employee->post }}</td>
                                                     <td>
                                                         <div class="form-button-action">
                                                             <button
-                                                            type="button"
-                                                            title="Edit Product"
-                                                            class="btn btn-icon btn-outline-primary btn-sm rounded-circle me-2"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#editProductModal{{ $product->id }}">
-                                                            <i class="fa fa-pen"></i>
-                                                        </button>
-                                                        <button
-                                                            type="button"
-                                                            title="Delete Product"
-                                                            class="btn btn-icon btn-outline-danger btn-sm rounded-circle"
-                                                            data-bs-toggle="modal"
-                                                            data-bs-target="#deleteProductModal{{ $product->id }}">
-                                                            <i class="fas fa-trash"></i>
-                                                        </button>
+                                                                type="button"
+                                                                title=""
+                                                                class="btn btn-icon btn-outline-primary btn-sm rounded-circle me-2"
+                                                                data-original-title="Edit Task"
+                                                                data-bs-toggle="modal"
+                                                                 data-bs-target="#editEmployeeModal{{ $employee->id }}"
+                                                                >
+                                                                <i class="fa fa-pen"></i>
+                                                            </button>
+                                                            <button
+                                                                type="button"
+
+                                                                title=""
+                                                                class="btn btn-icon btn-outline-danger btn-sm rounded-circle"
+                                                                data-original-title="Remove"
+                                                                data-bs-toggle="modal"
+                                                                 data-bs-target="#deleteEmployeeModal{{ $employee->id }}"
+                                                                >
+                                                                <i class="fas fa-trash"></i>
+                                                            </button>
                                                         </div>
                                                     </td>
 
@@ -306,27 +329,20 @@
                             </div>
                         </div>
 
-
                     </div>
                 </div>
             </div>
         </div>
-        @include('Dashboard.Products.addProduct')
-        @foreach($products as $product)
-    @include('Dashboard.Products.editProduct', ['product' => $product])
-    @include('Dashboard.Products.deleteProduct', ['product' => $product])
 
+        <!--  add model-->
 
-@endforeach
-{{--         <!--  add model-->
-        @include('dashboard.FlowerPage.addFlower')
+        @include('Dashboard.Employees.addEmployee')
 
+        @foreach($employees as $employee)
+            @include('Dashboard.Employees.updateEmployee', ['employee' => $employee])
+            @include('Dashboard.Employees.deleteEmployee', ['employee' => $employee])
 
-        @foreach($flowers as $flower)
-    @include('dashboard.FlowerPage.updateFlower', ['flower' => $product])
-    @include('dashboard.FlowerPage.deleteFlower', ['flower' => $product])
-
-@endforeach --}}
+        @endforeach
 
         <!--   Core JS Files   -->
         <script src="assets/js/core/jquery-3.7.1.min.js"></script>

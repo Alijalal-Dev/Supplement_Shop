@@ -95,7 +95,7 @@
               </li>
               <li class="nav-item">
                 <a
-                 {{--  href="{{ route('employee') }}" --}}
+                  href="{{ route('employee') }}"
                   class="collapsed"
                   aria-expanded="false"
                 >
