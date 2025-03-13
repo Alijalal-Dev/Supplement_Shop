@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EmployeeController;
-
+use App\Http\Controllers\TestimonialController;
 
 Route::get('/', function () {
     return view('LandingPage.index');
@@ -27,4 +27,6 @@ Route::post('/employees',[EmployeeController::class, 'store'])->name('employee.s
 Route::put('/employees/{employee}', [EmployeeController::class, 'update'])->name('employee.update');
 Route::delete('/employees/{employee}', [EmployeeController::class, 'destroy'])->name('employee.destroy');
 
-
+//Testimonial section
+Route::get('/testimonials', [TestimonialController::class, 'index'])->name('Review');
+Route::delete('/testimonials/{testimonial}', [TestimonialController::class, 'destroy'])->name('testimonial.destroy');

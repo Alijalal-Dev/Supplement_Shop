@@ -3,22 +3,29 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Garden Glow</title>
+    <title>Supplement Sage</title>
     <link rel="icon" type="image/png" href="images/logo_onglet.png">
     <style>
         .btn-hover-shadow {
             transition: all 0.3s ease;
         }
+
         .btn-hover-shadow:hover {
-            transform: translateY(-2px); /* Slight lift on hover */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+            transform: translateY(-2px);
+            /* Slight lift on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            /* Subtle shadow on hover */
         }
+
         .btn-primary {
-            background-color: #0d6efd; /* Bootstrap primary color */
+            background-color: #0d6efd;
+            /* Bootstrap primary color */
             border: none;
         }
+
         .btn-primary:hover {
-            background-color: #0b5ed7; /* Darker shade on hover */
+            background-color: #0b5ed7;
+            /* Darker shade on hover */
         }
     </style>
 
@@ -55,95 +62,69 @@
 
 <body>
     <div class="wrapper">
-      <!-- Sidebar -->
-      <div class="sidebar" data-background-color="dark">
-        <div class="sidebar-logo">
-          <!-- Logo Header -->
-          <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
-              <img
-                src="images/supp_logo2.png"
-                alt="navbar brand"
-                class="navbar-brand"
-                height="60"
-                width="180"
-                style="margin-top: 10px"
-              />
-            </a>
-            <div class="nav-toggle">
-              <button class="btn btn-toggle toggle-sidebar">
-                <i class="gg-menu-right"></i>
-              </button>
-              <button class="btn btn-toggle sidenav-toggler">
-                <i class="gg-menu-left"></i>
-              </button>
+        <!-- Sidebar -->
+        <div class="sidebar" data-background-color="dark">
+            <div class="sidebar-logo">
+                <!-- Logo Header -->
+                <div class="logo-header" data-background-color="dark">
+                    <a href="index.html" class="logo">
+                        <img src="images/supp_logo2.png" alt="navbar brand" class="navbar-brand" height="60"
+                            width="180" style="margin-top: 10px" />
+                    </a>
+                    <div class="nav-toggle">
+                        <button class="btn btn-toggle toggle-sidebar">
+                            <i class="gg-menu-right"></i>
+                        </button>
+                        <button class="btn btn-toggle sidenav-toggler">
+                            <i class="gg-menu-left"></i>
+                        </button>
+                    </div>
+                    <button class="topbar-toggler more">
+                        <i class="gg-more-vertical-alt"></i>
+                    </button>
+                </div>
+                <!-- End Logo Header -->
             </div>
-            <button class="topbar-toggler more">
-              <i class="gg-more-vertical-alt"></i>
-            </button>
-          </div>
-          <!-- End Logo Header -->
-        </div>
-        <div class="sidebar-wrapper scrollbar scrollbar-inner">
-          <div class="sidebar-content">
-            <ul class="nav nav-secondary">
-              <li class="nav-item">
-                <a
-                  href="{{ route('dashboard') }}"
-                  class="collapsed"
-                  aria-expanded="false"
-                >
-                  <i class="fas fa-home"></i>
-                  <p>Dashboard</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="{{ route('product') }}"
-                  class="collapsed"
-                  aria-expanded="false"
-                >
+            <div class="sidebar-wrapper scrollbar scrollbar-inner">
+                <div class="sidebar-content">
+                    <ul class="nav nav-secondary">
+                        <li class="nav-item">
+                            <a href="{{ route('dashboard') }}" class="collapsed" aria-expanded="false">
+                                <i class="fas fa-home"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('product') }}" class="collapsed" aria-expanded="false">
 
-                <i class="fas fa-clipboard"></i>
-                  <p>Products</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  href="{{ route('employee') }}"
-                  class="collapsed"
-                  aria-expanded="false"
-                >
-                <i class="fas fa-user"></i>
-                  <p>Employees</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  {{-- href="{{ route('order') }}" --}}
-                  class="collapsed"
-                  aria-expanded="false"
-                >
-                <i class="fas fa-box-open"></i>
-                  <p>Orders</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                 {{--  href="{{ route('Review') }}" --}}
-                  class="collapsed"
-                  aria-expanded="false"
-                >
-                <i class="fas fa-regular fa-comment"></i>
-                  <p>Reviews</p>
-                </a>
-              </li>
+                                <i class="fas fa-clipboard"></i>
+                                <p>Products</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('employee') }}" class="collapsed" aria-expanded="false">
+                                <i class="fas fa-user"></i>
+                                <p>Employees</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a {{-- href="{{ route('order') }}" --}} class="collapsed" aria-expanded="false">
+                                <i class="fas fa-box-open"></i>
+                                <p>Orders</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('Review') }}" class="collapsed" aria-expanded="false">
+                                <i class="fas fa-regular fa-comment"></i>
+                                <p>Reviews</p>
+                            </a>
+                        </li>
 
-            </ul>
-          </div>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- End Sidebar -->
+        <!-- End Sidebar -->
 
         <div class="main-panel">
             <!-- Header -->
@@ -152,10 +133,7 @@
                     <!-- Logo Header -->
                     <div class="logo-header" data-background-color="dark">
                         <a href="index.html" class="logo">
-                            <img
-                                src="assets/img/kaiadmin/logo_light.svg"
-                                alt="navbar brand"
-                                class="navbar-brand"
+                            <img src="assets/img/kaiadmin/logo_light.svg" alt="navbar brand" class="navbar-brand"
                                 height="20" />
                         </a>
                         <div class="nav-toggle">
@@ -173,8 +151,7 @@
                     <!-- End Logo Header -->
                 </div>
                 <!-- Navbar Header -->
-                <nav
-                    class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+                <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
                     <div class="container-fluid">
                         <nav
                             class="navbar navbar-header-left navbar-expand-lg navbar-form nav-search p-0 d-none d-lg-flex">
@@ -182,15 +159,10 @@
 
                         <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
                             <li class="nav-item topbar-user dropdown hidden-caret">
-                                <a
-                                    class="dropdown-toggle profile-pic"
-                                    data-bs-toggle="dropdown"
-                                    href="#"
+                                <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#"
                                     aria-expanded="false">
                                     <div class="avatar-sm">
-                                        <img
-                                            src="assets/img/profile.jpg"
-                                            alt="..."
+                                        <img src="assets/img/profile.jpg" alt="..."
                                             class="avatar-img rounded-circle" />
                                     </div>
                                     <span class="profile-username">
@@ -203,16 +175,13 @@
                                         <li>
                                             <div class="user-box">
                                                 <div class="avatar-lg">
-                                                    <img
-                                                        src="assets/img/profile.jpg"
-                                                        alt="image profile"
+                                                    <img src="assets/img/profile.jpg" alt="image profile"
                                                         class="avatar-img rounded" />
                                                 </div>
                                                 <div class="u-text">
                                                     <h4>Hizrian</h4>
                                                     <p class="text-muted">hello@example.com</p>
-                                                    <a
-                                                        href="profile.html"
+                                                    <a href="profile.html"
                                                         class="btn btn-xs btn-secondary btn-sm">View Profile</a>
                                                 </div>
                                             </div>
@@ -241,23 +210,23 @@
                 <div class="page-inner">
                     <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
                         <div>
-                            <button class="btn btn-primary btn-lg shadow-lg px-4 py-2 rounded-pill fw-bold text-uppercase animateanimated animatepulse"
-                                data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
-                                Add Employee
-                            </button>
+                            <h4 class="card-title">Employees</h4>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">Employees</h4>
+                                    <button
+                                        class="btn btn-primary btn-lg shadow-lg px-4 py-2 rounded-pill fw-bold text-uppercase animateanimated animatepulse"
+                                        data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
+                                        Add Employee
+                                    </button>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table
-                                            id="multi-filter-select"
-                                            class="display table  table-hover">
+                                        <table id="multi-filter-select"
+                                            class="display table table-striped  table-hover">
                                             <thead>
                                                 <tr>
                                                     <th>Name</th>
@@ -284,41 +253,34 @@
 
                                             <tbody>
                                                 @foreach ($employees as $employee)
-                                                <tr>
-                                                    <td>{{ $employee->name }}</td>
-                                                    <td>{{ $employee->cin }}</td>
-                                                    <td>{{ $employee->gender }}</td>
-                                                    <td>{{ $employee->adresse }}</td>
-                                                    <td>{{ $employee->date_debut }}</td>
-                                                    <td>{{ $employee->date_fin }}</td>
-                                                    <td>{{ $employee->post }}</td>
-                                                    <td>
-                                                        <div class="form-button-action">
-                                                            <button
-                                                                type="button"
-                                                                title=""
-                                                                class="btn btn-icon btn-outline-primary btn-sm rounded-circle me-2"
-                                                                data-original-title="Edit Task"
-                                                                data-bs-toggle="modal"
-                                                                 data-bs-target="#editEmployeeModal{{ $employee->id }}"
-                                                                >
-                                                                <i class="fa fa-pen"></i>
-                                                            </button>
-                                                            <button
-                                                                type="button"
+                                                    <tr>
+                                                        <td>{{ $employee->name }}</td>
+                                                        <td>{{ $employee->cin }}</td>
+                                                        <td>{{ $employee->gender }}</td>
+                                                        <td>{{ $employee->adresse }}</td>
+                                                        <td>{{ $employee->date_debut }}</td>
+                                                        <td>{{ $employee->date_fin }}</td>
+                                                        <td>{{ $employee->post }}</td>
+                                                        <td>
+                                                            <div class="form-button-action">
+                                                                <button type="button" title=""
+                                                                    class="btn btn-icon btn-outline-primary btn-sm rounded-circle me-2"
+                                                                    data-original-title="Edit Task"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#editEmployeeModal{{ $employee->id }}">
+                                                                    <i class="fa fa-pen"></i>
+                                                                </button>
+                                                                <button type="button" title=""
+                                                                    class="btn btn-icon btn-outline-danger btn-sm rounded-circle"
+                                                                    data-original-title="Remove"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#deleteEmployeeModal{{ $employee->id }}">
+                                                                    <i class="fas fa-trash"></i>
+                                                                </button>
+                                                            </div>
+                                                        </td>
 
-                                                                title=""
-                                                                class="btn btn-icon btn-outline-danger btn-sm rounded-circle"
-                                                                data-original-title="Remove"
-                                                                data-bs-toggle="modal"
-                                                                 data-bs-target="#deleteEmployeeModal{{ $employee->id }}"
-                                                                >
-                                                                <i class="fas fa-trash"></i>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-
-                                                </tr>
+                                                    </tr>
                                                 @endforeach
 
 
@@ -338,10 +300,9 @@
 
         @include('Dashboard.Employees.addEmployee')
 
-        @foreach($employees as $employee)
+        @foreach ($employees as $employee)
             @include('Dashboard.Employees.updateEmployee', ['employee' => $employee])
             @include('Dashboard.Employees.deleteEmployee', ['employee' => $employee])
-
         @endforeach
 
         <!--   Core JS Files   -->
