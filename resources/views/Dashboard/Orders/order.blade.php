@@ -4,8 +4,29 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Supplement Sage</title>
-    <link rel="icon" type="image/png" href="images/logo_onglet.png">
+    <style>
+        .btn-hover-shadow {
+            transition: all 0.3s ease;
+        }
 
+        .btn-hover-shadow:hover {
+            transform: translateY(-2px);
+            /* Slight lift on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            /* Subtle shadow on hover */
+        }
+
+        .btn-primary {
+            background-color: #0d6efd;
+            /* Bootstrap primary color */
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0b5ed7;
+            /* Darker shade on hover */
+        }
+    </style>
     <!-- Fonts and icons -->
     <script src="assets/js/plugin/webfont/webfont.min.js"></script>
     <script>
@@ -187,77 +208,73 @@
                 <div class="page-inner">
                     <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
                         <div>
-                            <h4 class="card-title">Products</h4>
+                            <h4 class="card-title">Orders</h4>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header">
-
                                     <button
                                         class="btn btn-primary btn-lg shadow-lg px-4 py-2 rounded-pill fw-bold text-uppercase animateanimated animatepulse"
-                                        data-bs-toggle="modal" data-bs-target="#addProductModal">
-                                        Add Product
+                                        data-bs-toggle="modal" data-bs-target="#addOrderModal">
+                                        Add Order
                                     </button>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table id="multi-filter-select"
-                                            class="display table table-striped table-hover">
+                                        <table id="multi-filter-select" class="display table  table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>Name</th>
-                                                    <th>Description</th>
-                                                    <th>Price</th>
+                                                    <th>ORDER id</th>
+                                                    <th>Flower name</th>
+                                                    <th>quantity</th>
+                                                    <th>total price</th>
+                                                    <th>status</th>
                                                     <th>Type</th>
-                                                    <th>Category</th>
-                                                    <th>Image</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
                                             <tfoot>
                                                 <tr>
-                                                    <th>Name</th>
-                                                    <th>Description</th>
-                                                    <th>Price</th>
+                                                    <th>ORDER id</th>
+                                                    <th>Flower name</th>
+                                                    <th>quantity</th>
+                                                    <th>total price</th>
+                                                    <th>status</th>
                                                     <th>Type</th>
-                                                    <th>Category</th>
                                                 </tr>
                                             </tfoot>
-
                                             <tbody>
-                                                @foreach ($products as $product)
+                                                @foreach ($orders as $order)
                                                     <tr>
-                                                        <td>{{ $product->name }}</td>
-                                                        <td>{{ $product->description }}</td>
-                                                        <td>{{ number_format($product->price, 2) }} DH</td>
-                                                        <td>{{ $product->type }}</td>
-                                                        <td>{{ $product->category }}</td>
-                                                        <td><img src="{{ $product->image }}"
-                                                                style="height:50px; width:50px" alt=""></td>
+                                                        <td>{{ $order->id }}</td>
+                                                        <td>{{ $order->product->name }}</td>
+                                                        <td>{{ $order->quantite }}</td>
+                                                        <td>{{ $order->total_price }} DH</td>
+                                                        <td>{{ $order->status }}</td>
+                                                        <td>{{ $order->type }}</td>
 
                                                         <td>
                                                             <div class="form-button-action">
-                                                                <button type="button" title="Edit Product"
+                                                                <button type="button" title=""
                                                                     class="btn btn-icon btn-outline-primary btn-sm rounded-circle me-2"
+                                                                    data-original-title="Edit Task"
                                                                     data-bs-toggle="modal"
-                                                                    data-bs-target="#editProductModal{{ $product->id }}">
+                                                                    data-bs-target="#editOrderModal{{ $order->id }}">
                                                                     <i class="fa fa-pen"></i>
                                                                 </button>
-                                                                <button type="button" title="Delete Product"
+                                                                <button type="button" title=""
                                                                     class="btn btn-icon btn-outline-danger btn-sm rounded-circle"
+                                                                    data-original-title="Remove"
                                                                     data-bs-toggle="modal"
-                                                                    data-bs-target="#deleteProductModal{{ $product->id }}">
+                                                                    data-bs-target="#deleteOrderModal{{ $order->id }}">
                                                                     <i class="fas fa-trash"></i>
                                                                 </button>
                                                             </div>
                                                         </td>
-
                                                     </tr>
                                                 @endforeach
-
-
                                             </tbody>
                                         </table>
                                     </div>
@@ -265,25 +282,21 @@
                             </div>
                         </div>
 
-
                     </div>
                 </div>
             </div>
         </div>
-        @include('Dashboard.Products.addProduct')
-        @foreach ($products as $product)
-            @include('Dashboard.Products.editProduct', ['product' => $product])
-            @include('Dashboard.Products.deleteProduct', ['product' => $product])
+
+        <!--  add model-->
+
+
+        @include('Dashboard.Orders.addOrder', ['products' => $products])
+
+        @foreach ($orders as $order)
+            @include('Dashboard.Orders.updateOrder', ['order' => $order, 'products' => $products])
+            @include('Dashboard.Orders.deleteOrder', ['order' => $order])
         @endforeach
-        {{--         <!--  add model-->
-        @include('dashboard.FlowerPage.addFlower')
 
-
-        @foreach ($flowers as $flower)
-    @include('dashboard.FlowerPage.updateFlower', ['flower' => $product])
-    @include('dashboard.FlowerPage.deleteFlower', ['flower' => $product])
-
-@endforeach --}}
 
         <!--   Core JS Files   -->
         <script src="assets/js/core/jquery-3.7.1.min.js"></script>

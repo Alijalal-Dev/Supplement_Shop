@@ -108,7 +108,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a {{-- href="{{ route('order') }}" --}} class="collapsed" aria-expanded="false">
+                            <a href="{{ route('order') }}" class="collapsed" aria-expanded="false">
                                 <i class="fas fa-box-open"></i>
                                 <p>Orders</p>
                             </a>
