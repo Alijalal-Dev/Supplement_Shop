@@ -133,47 +133,44 @@
                         </nav>
 
                         <ul class="navbar-nav topbar-nav ms-md-auto align-items-center">
-                            <li class="nav-item topbar-user dropdown hidden-caret">
-                                <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#"
-                                    aria-expanded="false">
-                                    <div class="avatar-sm">
-                                        <img src="assets/img/profile.jpg" alt="..."
-                                            class="avatar-img rounded-circle" />
-                                    </div>
-                                    <span class="profile-username">
-                                        <span class="op-7">Hi,</span>
-                                        <span class="fw-bold">Hizrian</span>
-                                    </span>
-                                </a>
-                                <ul class="dropdown-menu dropdown-user animated fadeIn">
-                                    <div class="dropdown-user-scroll scrollbar-outer">
-                                        <li>
-                                            <div class="user-box">
-                                                <div class="avatar-lg">
-                                                    <img src="assets/img/profile.jpg" alt="image profile"
-                                                        class="avatar-img rounded" />
+
+                                <li class="nav-item topbar-user dropdown hidden-caret">
+                                    <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                                        <div class="avatar-sm">
+                                            <!-- Display the user's profile image (if available) -->
+                                            <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile.jpg' }}" alt="Profile Image" class="avatar-img rounded-circle" />
+                                        </div>
+                                        <span class="profile-username">
+                                            <span class="op-7">Hi,</span>
+                                            <span class="fw-bold">{{ Auth::user()->name }}</span>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user animated fadeIn">
+                                        <div class="dropdown-user-scroll scrollbar-outer">
+                                            <li>
+                                                <div class="user-box">
+                                                    <div class="avatar-lg">
+                                                        <!-- Display the user's profile image (if available) -->
+                                                        <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile.jpg' }}" alt="Profile Image" class="avatar-img rounded" />
+                                                    </div>
+                                                    <div class="u-text">
+                                                        <h4>{{ Auth::user()->name }}</h4>
+                                                        <p class="text-muted">{{ Auth::user()->email }}</p>
+                                                        <a href="{{ route('profile.edit') }}" class="btn btn-xs btn-secondary btn-sm"> Profile</a>
+                                                    </div>
                                                 </div>
-                                                <div class="u-text">
-                                                    <h4>Hizrian</h4>
-                                                    <p class="text-muted">hello@example.com</p>
-                                                    <a href="profile.html"
-                                                        class="btn btn-xs btn-secondary btn-sm">View Profile</a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">My Profile</a>
-                                            <a class="dropdown-item" href="#">My Balance</a>
-                                            <a class="dropdown-item" href="#">Inbox</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Account Setting</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Logout</a>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </li>
+                                            </li>
+                                            <li>
+                                                <div class="dropdown-divider"></div>
+                                                <!-- Logout Form -->
+                                                <form method="POST" action="{{ route('logout') }}">
+                                                    @csrf
+                                                    <button type="submit" class="dropdown-item">Logout</button>
+                                                </form>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </li>
                         </ul>
                     </div>
                 </nav>
@@ -200,7 +197,7 @@
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Employees</p>
-                                                <h4 class="card-title">1,294</h4>
+                                                <h4 class="card-title">{{ $employeescount }}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -219,7 +216,7 @@
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Supplements</p>
-                                                <h4 class="card-title">1303</h4>
+                                                <h4 class="card-title">{{ $Supplementcount }}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -238,7 +235,7 @@
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Accessoires</p>
-                                                <h4 class="card-title">$ 1,345</h4>
+                                                <h4 class="card-title">{{ $accesoirecount }}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -257,7 +254,7 @@
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Orders</p>
-                                                <h4 class="card-title">576</h4>
+                                                <h4 class="card-title">{{ $orderscount }}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -270,70 +267,14 @@
                             <div class="card card-round">
                                 <div class="card-header">
                                     <div class="card-head-row">
-                                        <div class="card-title">User Statistics</div>
-                                        <div class="card-tools">
-                                            <a href="#" class="btn btn-label-success btn-round btn-sm me-2">
-                                                <span class="btn-label">
-                                                    <i class="fa fa-pencil"></i>
-                                                </span>
-                                                Export
-                                            </a>
-                                            <a href="#" class="btn btn-label-info btn-round btn-sm">
-                                                <span class="btn-label">
-                                                    <i class="fa fa-print"></i>
-                                                </span>
-                                                Print
-                                            </a>
-                                        </div>
+                                        <div class="card-title">Income Orders</div>
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="chart-container" style="min-height: 375px">
-                                        <canvas id="statisticsChart"></canvas>
+                                        <canvas id="incomeChart"></canvas>
                                     </div>
                                     <div id="myChartLegend"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card card-primary card-round">
-                                <div class="card-header">
-                                    <div class="card-head-row">
-                                        <div class="card-title">Daily Sales</div>
-                                        <div class="card-tools">
-                                            <div class="dropdown">
-                                                <button class="btn btn-sm btn-label-light dropdown-toggle"
-                                                    type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-                                                    aria-haspopup="true" aria-expanded="false">
-                                                    Export
-                                                </button>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <a class="dropdown-item" href="#">Action</a>
-                                                    <a class="dropdown-item" href="#">Another action</a>
-                                                    <a class="dropdown-item" href="#">Something else here</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card-category">March 25 - April 02</div>
-                                </div>
-                                <div class="card-body pb-0">
-                                    <div class="mb-4 mt-2">
-                                        <h1>$4,578.58</h1>
-                                    </div>
-                                    <div class="pull-in">
-                                        <canvas id="dailySalesChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card card-round">
-                                <div class="card-body pb-0">
-                                    <div class="h1 fw-bold float-end text-primary">+5%</div>
-                                    <h2 class="mb-2">17</h2>
-                                    <p class="text-muted">Users online</p>
-                                    <div class="pull-in sparkline-fix">
-                                        <div id="lineChart"></div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -380,34 +321,42 @@
     <!-- Kaiadmin DEMO methods, don't include it in your project! -->
     <script src="assets/js/setting-demo.js"></script>
     <script src="assets/js/demo.js"></script>
-    <script>
-        $("#lineChart").sparkline([102, 109, 120, 99, 110, 105, 115], {
-            type: "line",
-            height: "70",
-            width: "100%",
-            lineWidth: "2",
-            lineColor: "#177dff",
-            fillColor: "rgba(23, 125, 255, 0.14)",
-        });
 
-        $("#lineChart2").sparkline([99, 125, 122, 105, 110, 124, 115], {
-            type: "line",
-            height: "70",
-            width: "100%",
-            lineWidth: "2",
-            lineColor: "#f3545d",
-            fillColor: "rgba(243, 84, 93, .14)",
-        });
-
-        $("#lineChart3").sparkline([105, 103, 123, 100, 95, 105, 115], {
-            type: "line",
-            height: "70",
-            width: "100%",
-            lineWidth: "2",
-            lineColor: "#ffa534",
-            fillColor: "rgba(255, 165, 52, .14)",
-        });
-    </script>
+<script>
+    var ctx = document.getElementById('incomeChart').getContext('2d');
+    var incomeChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: {!! json_encode($dates) !!},
+            datasets: [
+                {
+                    label: 'Income from Completed Orders',
+                    data: {!! json_encode($incomeData) !!},
+                    borderColor: 'rgb(75, 192, 192)',
+                    fill: false,
+                },
+            ],
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Income ($)',
+                    },
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Date',
+                    },
+                },
+            },
+        },
+    });
+</script>
 </body>
 
 </html>

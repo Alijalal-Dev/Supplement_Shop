@@ -93,45 +93,54 @@
         </symbol>
       </svg>
 
-    <header id="top" class="position-sticky top-0 start-0">
-      <nav class="navbar navbar-expand-lg fixed-top bg-black py-4" style="height: 100px">
-        <div class="container">
-          <a class="navbar-brand" href="#home">
-            <img src="images/supp_logo.png" class="img-fluid">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header bg-black">
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <header id="top" class="position-sticky top-0 start-0">
+        <nav class="navbar navbar-expand-lg fixed-top bg-black py-4" style="height: 100px">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="images/supp_logo.png" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-black">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-black">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 gap-4 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active text-uppercase" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" aria-current="page" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" aria-current="page" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" aria-current="page" href="#products">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" aria-current="page" href="#faqs">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" aria-current="page" href="#contact">Contact</a>
+                            </li>
+
+                            <!-- Login and Register Links -->
+                            @guest
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="{{ route('login') }}" style="color: var(--bs-link-color);">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-uppercase" href="{{ route('register') }}" style="color: var(--bs-link-color);">Register</a>
+                                </li>
+                            @endguest
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="offcanvas-body bg-black">
-              <ul class="navbar-nav justify-content-end flex-grow-1 gap-4 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active text-uppercase" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" aria-current="page" href="#about">About</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" aria-current="page" href="#features">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-uppercase" aria-current="page" href="#products">Products</a>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" aria-current="page" href="#faqs">FAQs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-uppercase" aria-current="page" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </header>
 
     <section id="home" class="section-padding">
