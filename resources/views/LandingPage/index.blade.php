@@ -173,10 +173,6 @@
                                     <a class="nav-link text-uppercase" href="{{ route('login') }}"
                                         style="color: var(--bs-link-color);">Login</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-uppercase" href="{{ route('register') }}"
-                                        style="color: var(--bs-link-color);">Register</a>
-                                </li>
                             @endguest
 
                             <!-- User Dropdown (Authenticated Users) -->
