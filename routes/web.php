@@ -45,14 +45,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/orders/{order}', [OrderController::class, 'destroy'])->name('order.destroy');
 });
 
-// My Routes
-
 Route::get('/', function () {
     return view('LandingPage.index');
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
-
+Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonial.store');
 
 require __DIR__ . '/auth.php';
