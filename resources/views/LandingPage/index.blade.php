@@ -166,7 +166,6 @@
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase" aria-current="page" href="#contact">Contact</a>
                             </li>
-
                             <!-- Login and Register Links -->
                             @guest
                                 <li class="nav-item">
@@ -174,7 +173,6 @@
                                         style="color: var(--bs-link-color);">Login</a>
                                 </li>
                             @endguest
-
                             <!-- User Dropdown (Authenticated Users) -->
                             @auth
                                 <li class="nav-item dropdown">
