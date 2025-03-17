@@ -136,6 +136,25 @@
                                     <a class="nav-link text-uppercase" href="{{ route('register') }}" style="color: var(--bs-link-color);">Register</a>
                                 </li>
                             @endguest
+
+                            <!-- User Dropdown (Authenticated Users) -->
+                            @auth
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: var(--bs-link-color);">
+                                        {{ Auth::user()->name }}
+                                    </a>
+                                    <ul class="dropdown-menu bg-black" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <form method="POST" action="{{ route('logout') }}">
+                                                @csrf
+                                                <button type="submit" class="dropdown-item text-uppercase" style="color: var(--bs-link-color);">Logout</button>
+                                            </form>
+                                        </li>
+                                        <li>
+                                            <a href="{{ route('dashboard') }}" class="dropdown-item text-uppercase" style="color: var(--bs-link-color);">Dashboard</a>
+                                    </ul>
+                                </li>
+                            @endauth
                         </ul>
                     </div>
                 </div>
