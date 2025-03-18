@@ -161,7 +161,7 @@
                                     aria-expanded="false">
                                     <div class="avatar-sm">
                                         <!-- Display the user's profile image (if available) -->
-                                        <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile.jpg' }}"
+                                        <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile1.jpg' }}"
                                             alt="Profile Image" class="avatar-img rounded-circle" />
                                     </div>
                                     <span class="profile-username">
@@ -175,7 +175,7 @@
                                             <div class="user-box">
                                                 <div class="avatar-lg">
                                                     <!-- Display the user's profile image (if available) -->
-                                                    <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile.jpg' }}"
+                                                    <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile1.jpg' }}"
                                                         alt="Profile Image" class="avatar-img rounded" />
                                                 </div>
                                                 <div class="u-text">
