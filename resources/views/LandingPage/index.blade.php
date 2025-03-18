@@ -158,7 +158,7 @@
                                 <a class="nav-link text-uppercase" aria-current="page" href="#features">Features</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase" aria-current="page" href="#products">Products</a>
+                                <a class="nav-link text-uppercase" aria-current="page" href="#featured-products">Products</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase" aria-current="page" href="#faqs">FAQs</a>
@@ -358,194 +358,76 @@
         </div>
     </section>
 
-    <section id="products" class="bg-black py-5">
+    <section id="featured-products" class="bg-black py-5">
         <div class="container">
             <div class="text-center pb-5">
                 <h2 class="text-white">Featured Supplements</h2>
                 <p class="text-white opacity-75">Exclusive discounts on our premium collection</p>
             </div>
-
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                <!-- Product Card 1 -->
+                @foreach($featuredProducts as $product)
                 <div class="col">
                     <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
                         <div class="position-relative">
-                            <img src="images/product-large-1.jpg" alt="Supplement 1" class="card-img-top">
-                            <div class="position-absolute top-0 end-0 m-2">
-                                <span class="badge bg-primary text-dark fw-bold px-2 py-1 rounded-pill">-47%</span>
-                            </div>
+                            <img src="{{ asset($product->image ?? 'placeholder.jpg') }}" alt="{{ $product->name }}" class="card-img-top">
                         </div>
                         <div class="card-body d-flex flex-column">
-                            <div class="d-flex mb-2">
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <span class="ms-1 text-white-50 small">(124)</span>
-                            </div>
-                            <h5 class="card-title text-white fw-bold">Premium Whey Protein</h5>
-                            <p class="card-text text-white-50 small">High-quality protein supplement for muscle
-                                recovery and growth.</p>
+                            <h5 class="card-title text-white fw-bold">{{ $product->name }}</h5>
+                            <p class="card-text text-white-50 small">{{ $product->description }}</p>
                             <div class="mt-auto">
                                 <div class="d-flex align-items-center mb-3">
-                                    <span class="fs-5 fw-bold text-primary me-2">$99.99</span>
-                                    <span class="text-white-50 text-decoration-line-through">$190.00</span>
+                                    <span class="fs-5 fw-bold text-primary me-2">${{ number_format($product->price, 2) }}</span>
+                                    <span class="badge bg-dark">{{ $product->type }}</span>
                                 </div>
-                                <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2">Add to
-                                    Cart</button>
+                                <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2 view-product"
+                                        data-id="{{ $product->id }}">View Product</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Product Card 2 -->
-                <div class="col">
-                    <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
-                        <div class="position-relative">
-                            <img src="images/product-large-2.jpg" alt="Supplement 2" class="card-img-top">
-                            <div class="position-absolute top-0 end-0 m-2">
-                                <span class="badge bg-primary text-dark fw-bold px-2 py-1 rounded-pill">-38%</span>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex mb-2">
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <span class="ms-1 text-white-50 small">(89)</span>
-                            </div>
-                            <h5 class="card-title text-white fw-bold">Pre-Workout Energy</h5>
-                            <p class="card-text text-white-50 small">Advanced formula for enhanced performance and
-                                energy during workouts.</p>
-                            <div class="mt-auto">
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="fs-5 fw-bold text-primary me-2">$79.99</span>
-                                    <span class="text-white-50 text-decoration-line-through">$129.99</span>
-                                </div>
-                                <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2">Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Card 3 -->
-                <div class="col">
-                    <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
-                        <div class="position-relative">
-                            <img src="images/product-large-3.jpg" alt="Supplement 3" class="card-img-top">
-                            <div class="position-absolute top-0 end-0 m-2">
-                                <span class="badge bg-primary text-dark fw-bold px-2 py-1 rounded-pill">NEW</span>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex mb-2">
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <span class="ms-1 text-white-50 small">(56)</span>
-                            </div>
-                            <h5 class="card-title text-white fw-bold">BCAA Complex</h5>
-                            <p class="card-text text-white-50 small">Essential amino acids to support muscle growth and
-                                reduce recovery time.</p>
-                            <div class="mt-auto">
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="fs-5 fw-bold text-primary me-2">$69.99</span>
-                                    <span class="text-white-50 text-decoration-line-through">$99.99</span>
-                                </div>
-                                <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2">Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product Card 4 -->
-                <div class="col">
-                    <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
-                        <div class="position-relative">
-                            <img src="images/product-thumbnail-1.jpg" alt="Supplement 4" class="card-img-top">
-                            <div class="position-absolute top-0 end-0 m-2">
-                                <span class="badge bg-primary text-dark fw-bold px-2 py-1 rounded-pill">-25%</span>
-                            </div>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="d-flex mb-2">
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <svg class="star text-warning" width="16" height="16">
-                                    <use xlink:href="#star"></use>
-                                </svg>
-                                <span class="ms-1 text-white-50 small">(72)</span>
-                            </div>
-                            <h5 class="card-title text-white fw-bold">Vitamin Complex</h5>
-                            <p class="card-text text-white-50 small">Complete multivitamin formula to support overall
-                                health and immunity.</p>
-                            <div class="mt-auto">
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="fs-5 fw-bold text-primary me-2">$49.99</span>
-                                    <span class="text-white-50 text-decoration-line-through">$69.99</span>
-                                </div>
-                                <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2">Add to
-                                    Cart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
-
             <div class="text-center mt-5">
-                <a href="#"
-                    class="btn btn-outline-primary text-white border-2 px-4 py-2 rounded-pill fw-semibold">View All
-                    Products</a>
+                <button id="view-all-btn" class="btn btn-outline-primary text-white border-2 px-4 py-2 rounded-pill fw-semibold">
+                    View All Products
+                </button>
             </div>
         </div>
     </section>
+
+    <section id="all-products" class="bg-black py-5 d-none">
+        <div class="container">
+            @foreach($allProducts as $category => $products)
+            <div class="category-group mb-5">
+                <h2 class="text-white mb-4 border-bottom border-primary pb-2">{{ ucfirst($category) }}</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    @foreach($products as $product)
+                    <div class="col">
+                        <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
+                            <div class="position-relative">
+                                <img src="{{ asset($product->image ?? 'placeholder.jpg') }}" alt="{{ $product->name }}" class="card-img-top">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title text-white fw-bold">{{ $product->name }}</h5>
+                                <p class="card-text text-white-50 small">{{ $product->description }}</p>
+                                <div class="mt-auto">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span class="fs-5 fw-bold text-primary me-2">${{ number_format($product->price, 2) }}</span>
+                                        <span class="badge bg-dark">{{ $product->type }}</span>
+                                    </div>
+                                    <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2 view-product"
+                                            data-id="{{ $product->id }}">View Product</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </section>
+
 
     <section id="faqs" class="bg-secondary section-padding section-margin">
         <div class="container">
@@ -759,6 +641,27 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const viewAllBtn = document.getElementById('view-all-btn');
+            const allProductsSection = document.getElementById('all-products');
+
+            viewAllBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Show all products section
+                allProductsSection.classList.remove('d-none');
+
+                // Smooth scroll to section
+                allProductsSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+
+                // Change button text
+                this.textContent = 'Browse All Products';
+            });
+        });
+        </script>
 </body>
 
 </html>

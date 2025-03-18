@@ -7,7 +7,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\DashboardController;
-
+use App\Http\Controllers\LandingPageController;
 /* Route::get('/', function () {
     return view('welcome');
 }); */
@@ -51,6 +51,8 @@ Route::get('/', function () {
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth','admin'])->name('dashboard');
 
-Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonial.store');
 
+// Landing page
+Route::get('/', [LandingPageController::class, 'index'])->name('landing');
+Route::post('/testimonials/store', [TestimonialController::class, 'store'])->name('testimonial.store');
 require __DIR__ . '/auth.php';

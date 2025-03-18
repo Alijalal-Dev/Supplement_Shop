@@ -138,10 +138,9 @@
                                     <a class="dropdown-toggle profile-pic" data-bs-toggle="dropdown" href="#" aria-expanded="false">
                                         <div class="avatar-sm">
                                             <!-- Display the user's profile image (if available) -->
-                                            <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile.jpg' }}" alt="Profile Image" class="avatar-img rounded-circle" />
+                                            <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile1.jpg' }}" alt="Profile Image" class="avatar-img rounded-circle" />
                                         </div>
                                         <span class="profile-username">
-                                            <span class="op-7">Hi,</span>
                                             <span class="fw-bold">{{ Auth::user()->name }}</span>
                                         </span>
                                     </a>
@@ -151,7 +150,7 @@
                                                 <div class="user-box">
                                                     <div class="avatar-lg">
                                                         <!-- Display the user's profile image (if available) -->
-                                                        <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile.jpg' }}" alt="Profile Image" class="avatar-img rounded" />
+                                                        <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile1.jpg' }}" alt="Profile Image" class="avatar-img rounded" />
                                                     </div>
                                                     <div class="u-text">
                                                         <h4>{{ Auth::user()->name }}</h4>
