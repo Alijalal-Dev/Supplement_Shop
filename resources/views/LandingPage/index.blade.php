@@ -158,7 +158,8 @@
                                 <a class="nav-link text-uppercase" aria-current="page" href="#features">Features</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase" aria-current="page" href="#featured-products">Products</a>
+                                <a class="nav-link text-uppercase" aria-current="page"
+                                    href="#featured-products">Products</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-uppercase" aria-current="page" href="#faqs">FAQs</a>
@@ -365,30 +366,40 @@
                 <p class="text-white opacity-75">Exclusive discounts on our premium collection</p>
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                @foreach($featuredProducts as $product)
-                <div class="col">
-                    <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
-                        <div class="position-relative">
-                            <img src="{{ asset($product->image ?? 'placeholder.jpg') }}" alt="{{ $product->name }}" class="card-img-top">
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title text-white fw-bold">{{ $product->name }}</h5>
-                            <p class="card-text text-white-50 small">{{ $product->description }}</p>
-                            <div class="mt-auto">
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="fs-5 fw-bold text-primary me-2">${{ number_format($product->price, 2) }}</span>
-                                    <span class="badge bg-dark">{{ $product->type }}</span>
-                                </div>
-                                <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2 view-product"
+                @foreach ($featuredProducts as $product)
+                    <div class="col">
+                        <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
+                            <div class="position-relative">
+                                <img src="{{ asset($product->image ?? 'placeholder.jpg') }}"
+                                    alt="{{ $product->name }}" class="card-img-top">
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title text-white fw-bold">{{ $product->name }}</h5>
+                                <p class="card-text text-white-50 small">{{ $product->description }}</p>
+                                <div class="mt-auto">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <span
+                                            class="fs-5 fw-bold text-primary me-2">${{ number_format($product->price, 2) }}</span>
+                                        <span class="badge bg-dark">{{ $product->type }}</span>
+                                    </div>
+                                    <button
+                                        class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2 view-product"
                                         data-id="{{ $product->id }}">View Product</button>
+                                    <!-- WhatsApp Button -->
+                                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ urlencode("Hi, I'm interested in your product: {$product->name} (ID: {$product->id}). Can you provide more details?") }}"
+                                        class="btn btn-success text-white fw-semibold w-100 rounded-pill py-2 mb-2"
+                                        target="_blank">
+                                        <i class="fab fa-whatsapp me-2"></i>Contact on WhatsApp
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
             </div>
             <div class="text-center mt-5">
-                <button id="view-all-btn" class="btn btn-outline-primary text-white border-2 px-4 py-2 rounded-pill fw-semibold">
+                <button id="view-all-btn"
+                    class="btn btn-outline-primary text-white border-2 px-4 py-2 rounded-pill fw-semibold">
                     View All Products
                 </button>
             </div>
@@ -397,33 +408,36 @@
 
     <section id="all-products" class="bg-black py-5 d-none">
         <div class="container">
-            @foreach($allProducts as $category => $products)
-            <div class="category-group mb-5">
-                <h2 class="text-white mb-4 border-bottom border-primary pb-2">{{ ucfirst($category) }}</h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                    @foreach($products as $product)
-                    <div class="col">
-                        <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
-                            <div class="position-relative">
-                                <img src="{{ asset($product->image ?? 'placeholder.jpg') }}" alt="{{ $product->name }}" class="card-img-top">
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title text-white fw-bold">{{ $product->name }}</h5>
-                                <p class="card-text text-white-50 small">{{ $product->description }}</p>
-                                <div class="mt-auto">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <span class="fs-5 fw-bold text-primary me-2">${{ number_format($product->price, 2) }}</span>
-                                        <span class="badge bg-dark">{{ $product->type }}</span>
+            @foreach ($allProducts as $category => $products)
+                <div class="category-group mb-5">
+                    <h2 class="text-white mb-4 border-bottom border-primary pb-2">{{ ucfirst($category) }}</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                        @foreach ($products as $product)
+                            <div class="col">
+                                <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
+                                    <div class="position-relative">
+                                        <img src="{{ asset($product->image ?? 'placeholder.jpg') }}"
+                                            alt="{{ $product->name }}" class="card-img-top">
                                     </div>
-                                    <button class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2 view-product"
-                                            data-id="{{ $product->id }}">View Product</button>
+                                    <div class="card-body d-flex flex-column">
+                                        <h5 class="card-title text-white fw-bold">{{ $product->name }}</h5>
+                                        <p class="card-text text-white-50 small">{{ $product->description }}</p>
+                                        <div class="mt-auto">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <span
+                                                    class="fs-5 fw-bold text-primary me-2">${{ number_format($product->price, 2) }}</span>
+                                                <span class="badge bg-dark">{{ $product->type }}</span>
+                                            </div>
+                                            <button
+                                                class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2 view-product"
+                                                data-id="{{ $product->id }}">View Product</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
-            </div>
             @endforeach
         </div>
     </section>
@@ -532,8 +546,7 @@
         </div>
     </section>
 
-
-
+    
     <footer class="section-padding pt-0" id="contact">
         <div class="container">
             <div class="row g-4">
@@ -616,7 +629,8 @@
                                     required>
                             </div>
                             <div class="w-100">
-                                <input type="text" name="phone_number" placeholder="Phone Number" class="form-control w-100" required>
+                                <input type="text" name="phone_number" placeholder="Phone Number"
+                                    class="form-control w-100" required>
                             </div>
                         </div>
                         <div class="w-100">
@@ -661,7 +675,7 @@
                 this.textContent = 'Browse All Products';
             });
         });
-        </script>
+    </script>
 </body>
 
 </html>
