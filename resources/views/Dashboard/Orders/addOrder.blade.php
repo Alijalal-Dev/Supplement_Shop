@@ -2,7 +2,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content border-0 shadow-lg">
             <!-- Modal Header -->
-            <div class="modal-header bg-gradient-primary text-white">
+            <div class="modal-header bg-gradient-primary text-dark">
                 <h5 class="modal-title fw-bold fs-4" id="addOrderModalLabel">
                     <i class="bi bi-cart-plus me-2"></i>Add New Order
                 </h5>
