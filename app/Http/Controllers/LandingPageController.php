@@ -16,8 +16,9 @@ class LandingPageController extends Controller
     {
         $featuredProducts = Product::orderBy('created_at', 'desc')->take(4)->get();
         $allProducts = Product::all()->groupBy('category');
+        $whatsappNumber = env('WHATSAPP_NUMBER');
 
-        return view('LandingPage.index', compact('featuredProducts', 'allProducts'));
+        return view('LandingPage.index', compact('featuredProducts', 'allProducts', 'whatsappNumber'));
     }
 
 }

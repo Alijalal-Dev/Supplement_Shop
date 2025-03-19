@@ -382,12 +382,9 @@
                                             class="fs-5 fw-bold text-primary me-2">${{ number_format($product->price, 2) }}</span>
                                         <span class="badge bg-dark">{{ $product->type }}</span>
                                     </div>
-                                    <button
-                                        class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2 view-product"
-                                        data-id="{{ $product->id }}">View Product</button>
                                     <!-- WhatsApp Button -->
-                                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ urlencode("Hi, I'm interested in your product: {$product->name} (ID: {$product->id}). Can you provide more details?") }}"
-                                        class="btn btn-success text-white fw-semibold w-100 rounded-pill py-2 mb-2"
+                                    <a href="https://wa.me/{{ $whatsappNumber }}?text={{ urlencode("Hi, I'm interested in your product: {$product->name} . Can you provide more details?") }}"
+                                        class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2 view-product"
                                         target="_blank">
                                         <i class="fab fa-whatsapp me-2"></i>Contact on WhatsApp
                                     </a>
@@ -428,9 +425,12 @@
                                                     class="fs-5 fw-bold text-primary me-2">${{ number_format($product->price, 2) }}</span>
                                                 <span class="badge bg-dark">{{ $product->type }}</span>
                                             </div>
-                                            <button
+                                            <!-- WhatsApp Button -->
+                                            <a href="https://wa.me/{{ $whatsappNumber }}?text={{ urlencode("Hi, I'm interested in your product: {$product->name}. Can you provide more details?") }}"
                                                 class="btn btn-primary text-dark fw-semibold w-100 rounded-pill py-2 view-product"
-                                                data-id="{{ $product->id }}">View Product</button>
+                                                target="_blank">
+                                                <i class="fab fa-whatsapp me-2"></i>Contact on WhatsApp
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -546,7 +546,7 @@
         </div>
     </section>
 
-    
+
     <footer class="section-padding pt-0" id="contact">
         <div class="container">
             <div class="row g-4">
