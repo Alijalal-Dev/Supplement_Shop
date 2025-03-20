@@ -13,7 +13,9 @@ class OrderController extends Controller
     //
     public function index()
     {
-        $orders= Order::with('product')->get();
+        $orders= Order::with(['product' => function($query){
+            $query->withTrashed();
+        }])->get();
         $products= Product::all();
 
         return view('Dashboard.Orders.order', compact('orders',"products"));

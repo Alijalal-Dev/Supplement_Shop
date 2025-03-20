@@ -203,7 +203,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <div class="card card-stats card-info card-round">
+                            <div class="card card-stats card-success card-round">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-5">
@@ -222,7 +222,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <div class="card card-stats card-success card-round">
+                            <div class="card card-stats card-info card-round">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-5">
@@ -261,11 +261,11 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div class="card card-round">
                                 <div class="card-header">
                                     <div class="card-head-row">
-                                        <div class="card-title">Income Orders</div>
+                                        <div class="card-title"> Daily Income Orders</div>
                                     </div>
                                 </div>
                                 <div class="card-body">

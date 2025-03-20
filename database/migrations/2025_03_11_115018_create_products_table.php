@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->enum('type', ['accesoire', 'supplement']);
             $table->enum('category', ['creatine', 'proteine', 'vitamine','accesoire']);
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('products');
+        Schema::dropSoftDeletes();
     }
 };
