@@ -223,7 +223,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>ORDER id</th>
-                                                    <th>Flower name</th>
+                                                    <th>product name</th>
                                                     <th>quantity</th>
                                                     <th>total price</th>
                                                     <th>status</th>
@@ -234,7 +234,7 @@
                                             <tfoot>
                                                 <tr>
                                                     <th>ORDER id</th>
-                                                    <th>Flower name</th>
+                                                    <th>product name</th>
                                                     <th>quantity</th>
                                                     <th>total price</th>
                                                     <th>status</th>
@@ -245,7 +245,7 @@
                                                 @foreach ($orders as $order)
                                                     <tr>
                                                         <td>{{ $order->id }}</td>
-                                                        <td>{{ $order->product->name }}</td>
+                                                        <td>{{ $order->product->name}}</td>
                                                         <td>{{ $order->quantite }}</td>
                                                         <td>{{ $order->total_price }} DH</td>
                                                         <td>{{ $order->status }}</td>

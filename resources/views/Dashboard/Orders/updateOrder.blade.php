@@ -21,7 +21,7 @@
                             <select class="form-select form-select-lg border-2 border-primary shadow-sm" id="product_id{{ $order->id }}" name="product_id" required>
                                 <option value="" disabled>Select a product</option>
                                 @foreach ($products as $product)
-                                    <option value="{{ $product->id }}" data-price="{{ $product->price }}" {{ $order->product_id == $product->id ? 'selected' : '' }}>{{ $product->name }}</option>
+                                    <option value="{{ $product->id }}" data-price="{{ $product->price }}" {{ $order->product_id == $product->id ? 'selected' : '' }}>{{ $order->product->name}}</option>
                                 @endforeach
                             </select>
                         </div>
