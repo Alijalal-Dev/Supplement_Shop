@@ -1,5 +1,6 @@
 <!-- Delete Product Modal -->
-<div class="modal fade" id="deleteProductModal{{ $product->id }}" tabindex="-1" aria-labelledby="deleteProductModalLabel{{ $product->id }}" aria-hidden="true">
+<div class="modal fade" id="deleteProductModal{{ $product->id }}" tabindex="-1"
+    aria-labelledby="deleteProductModalLabel{{ $product->id }}" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 shadow-lg">
             <!-- Modal Header -->
@@ -7,14 +8,16 @@
                 <h5 class="modal-title fw-bold fs-4" id="deleteProductModalLabel{{ $product->id }}">
                     <i class="bi bi-exclamation-triangle me-2"></i>Delete Product
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
             </div>
 
             <!-- Modal Body -->
             <div class="modal-body p-4">
                 <div class="text-center mb-4">
                     <!-- Product Image -->
-                    <img src="{{ asset($product->image) }}" alt="{{ $product->name }}" class="img-fluid mb-3 rounded shadow-sm" style="max-height: 150px;">
+                    <img src="{{ asset($product->image) }}" alt="{{ $product->name }}"
+                        class="img-fluid mb-3 rounded shadow-sm" style="max-height: 150px;">
                     <!-- Product Name -->
                     <h5 class="fw-bold text-dark">{{ $product->name }}</h5>
                     <!-- Product Type and Price -->

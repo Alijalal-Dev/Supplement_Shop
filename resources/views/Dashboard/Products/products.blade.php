@@ -32,9 +32,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/plugins.min.css" />
     <link rel="stylesheet" href="assets/css/kaiadmin.min.css" />
-
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <link rel="stylesheet" href="assets/css/demo.css" />
 </head>
 
 <body>
@@ -141,7 +138,6 @@
                                             <img src="{{ Auth::user()->profile_photo_url ?? 'assets/img/profile1.jpg' }}" alt="Profile Image" class="avatar-img rounded-circle" />
                                         </div>
                                         <span class="profile-username">
-                                            <span class="op-7">Hi,</span>
                                             <span class="fw-bold">{{ Auth::user()->name }}</span>
                                         </span>
                                     </a>
@@ -270,16 +266,6 @@
             @include('Dashboard.Products.editProduct', ['product' => $product])
             @include('Dashboard.Products.deleteProduct', ['product' => $product])
         @endforeach
-        {{--         <!--  add model-->
-        @include('dashboard.FlowerPage.addFlower')
-
-
-        @foreach ($flowers as $flower)
-    @include('dashboard.FlowerPage.updateFlower', ['flower' => $product])
-    @include('dashboard.FlowerPage.deleteFlower', ['flower' => $product])
-
-@endforeach --}}
-
         <!--   Core JS Files   -->
         <script src="assets/js/core/jquery-3.7.1.min.js"></script>
         <script src="assets/js/core/popper.min.js"></script>

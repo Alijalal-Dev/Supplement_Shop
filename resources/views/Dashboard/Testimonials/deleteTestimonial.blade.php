@@ -1,4 +1,5 @@
-<div class="modal fade" id="deleteTestimonialModal{{ $testimonial->id }}" tabindex="-1" aria-labelledby="deleteTestimonialModal{{ $testimonial->id }}" aria-hidden="true">
+<div class="modal fade" id="deleteTestimonialModal{{ $testimonial->id }}" tabindex="-1"
+    aria-labelledby="deleteTestimonialModal{{ $testimonial->id }}" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 shadow-lg">
             <!-- Modal Header -->
@@ -6,7 +7,8 @@
                 <h5 class="modal-title fw-bold fs-4" id="deleteTestimonialModal{{ $testimonial->id }}">
                     <i class="bi bi-exclamation-triangle me-2"></i>Delete Testimonial
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
             </div>
 
             <!-- Modal Body -->

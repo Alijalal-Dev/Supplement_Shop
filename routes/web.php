@@ -8,13 +8,6 @@ use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LandingPageController;
-/* Route::get('/', function () {
-    return view('welcome');
-}); */
-
-/* Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard'); */
 
 Route::middleware(['auth','admin'])->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -43,10 +36,6 @@ Route::middleware(['auth','admin'])->group(function () {
     Route::post('/orders', [OrderController::class, 'store'])->name('order.store');
     Route::put('/orders/{order}', [OrderController::class, 'update'])->name('order.update');
     Route::delete('/orders/{order}', [OrderController::class, 'destroy'])->name('order.destroy');
-});
-
-Route::get('/', function () {
-    return view('LandingPage.index');
 });
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth','admin'])->name('dashboard');

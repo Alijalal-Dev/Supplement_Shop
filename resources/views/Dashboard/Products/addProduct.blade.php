@@ -6,7 +6,8 @@
                 <h5 class="modal-title fw-bold fs-4" id="addProductModalLabel">
                     <i class="bi bi-bag-plus me-2"></i>Add New Product
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
             </div>
 
             <!-- Modal Body -->
@@ -17,14 +18,15 @@
                         <!-- Product Name -->
                         <div class="col-md-12">
                             <label for="productName" class="form-label fw-semibold text-dark">Product Name</label>
-                            <input type="text" class="form-control form-control-lg border-2 border-primary shadow-sm" id="productName" name="name"
-                                placeholder="Enter product name" required>
+                            <input type="text" class="form-control form-control-lg border-2 border-primary shadow-sm"
+                                id="productName" name="name" placeholder="Enter product name" required>
                         </div>
 
                         <!-- Product Type -->
                         <div class="col-md-6">
                             <label for="productType" class="form-label fw-semibold text-dark">Product Type</label>
-                            <select class="form-select form-select-lg border-2 border-primary shadow-sm" id="productType" name="type" required>
+                            <select class="form-select form-select-lg border-2 border-primary shadow-sm"
+                                id="productType" name="type" required>
                                 <option value="" selected disabled>Select Product type</option>
                                 <option value="supplement">Supplement</option>
                                 <option value="accesoire">Accessory</option>
@@ -35,8 +37,9 @@
                         <div class="col-md-6">
                             <label for="productPrice" class="form-label fw-semibold text-dark">Price</label>
                             <div class="input-group shadow-sm">
-                                <input type="number" class="form-control form-control-lg border-2 border-primary" id="productPrice"
-                                    name="price" step="0.01" min="0" placeholder="0.00" required>
+                                <input type="number" class="form-control form-control-lg border-2 border-primary"
+                                    id="productPrice" name="price" step="0.01" min="0" placeholder="0.00"
+                                    required>
                                 <span class="input-group-text bg-primary text-white">DH</span>
                             </div>
                         </div>
@@ -44,8 +47,10 @@
                         <!-- Product Image -->
                         <div class="col-md-12">
                             <label for="productImage" class="form-label fw-semibold text-dark">Product Image</label>
-                            <input type="file" class="form-control form-control-lg border-2 border-primary shadow-sm" id="productImage" name="image" accept="image/*">
-                            <div class="form-text text-muted small">Upload a clear image of your product (Max: 2MB)</div>
+                            <input type="file" class="form-control form-control-lg border-2 border-primary shadow-sm"
+                                id="productImage" name="image" accept="image/*">
+                            <div class="form-text text-muted small">Upload a clear image of your product (Max: 2MB)
+                            </div>
                         </div>
 
                         <!-- Product Description -->
@@ -58,7 +63,8 @@
                         <!-- Product Category -->
                         <div class="col-md-6">
                             <label for="productCategory" class="form-label fw-semibold text-dark">Category</label>
-                            <select class="form-select form-select-lg border-2 border-primary shadow-sm" id="productCategory" name="category" required>
+                            <select class="form-select form-select-lg border-2 border-primary shadow-sm"
+                                id="productCategory" name="category" required>
                                 <option value="" selected disabled>Select Product category</option>
                                 <option value="proteine">Proteine</option>
                                 <option value="creatine">Creatine</option>
