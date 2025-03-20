@@ -1,7 +1,7 @@
 <div class="modal fade" id="deleteEmployeeModal{{ $employee->id }}" tabindex="-1" aria-labelledby="deleteEmployeeModal{{ $employee->id }}" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header bg-danger text-white">
+            <div class="modal-header bg-danger text-dark">
                 <h5 class="modal-title fw-bold" id="#deleteEmployeeModal{{ $employee->id }}">
                     <i class="bi bi-exclamation-triangle me-2"></i>Delete Testimonial
                 </h5>
@@ -9,12 +9,12 @@
             </div>
             <div class="modal-body">
                 <div class="text-center mb-4">
-                   
+
                 <h5>{{ $employee->name }}</h5>
                 <p class="text-muted">{{ $employee->post}}</p>
-                  
+
                 </div>
-                
+
                 <div class="alert alert-warning">
                     <i class="bi bi-exclamation-circle me-2"></i>
                     Are you sure you want to delete this employee? This action cannot be undone.

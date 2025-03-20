@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 shadow-lg">
             <!-- Modal Header -->
-            <div class="modal-header bg-gradient-danger text-white">
+            <div class="modal-header bg-gradient-danger text-dark">
                 <h5 class="modal-title fw-bold fs-4" id="deleteTestimonialModal{{ $testimonial->id }}">
                     <i class="bi bi-exclamation-triangle me-2"></i>Delete Testimonial
                 </h5>
