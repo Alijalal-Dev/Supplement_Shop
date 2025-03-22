@@ -15,6 +15,14 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <style>
+        .fixed-size-img {
+            width:100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 
 <body class="bg-black" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
@@ -371,7 +379,7 @@
                         <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
                             <div class="position-relative">
                                 <img src="{{ asset($product->image ?? 'placeholder.jpg') }}"
-                                    alt="{{ $product->name }}" class="card-img-top">
+                                    alt="{{ $product->name }}" class="card-img-top fixed-size-img">
                             </div>
                             <div class="card-body d-flex flex-column">
                                 <h5 class="card-title text-white fw-bold">{{ $product->name }}</h5>
@@ -414,7 +422,7 @@
                                 <div class="card h-100 bg-secondary border-0 rounded-3 overflow-hidden">
                                     <div class="position-relative">
                                         <img src="{{ asset($product->image ?? 'placeholder.jpg') }}"
-                                            alt="{{ $product->name }}" class="card-img-top">
+                                            alt="{{ $product->name }}" class="card-img-top fixed-size-img">
                                     </div>
                                     <div class="card-body d-flex flex-column">
                                         <h5 class="card-title text-white fw-bold">{{ $product->name }}</h5>
